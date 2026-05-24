@@ -1,0 +1,28 @@
+{
+  "name": "shutterfly-bulk-downloader",
+  "version": "1.0.0",
+  "description": "Pure-API bulk downloader for personal Shutterfly photo libraries, with a video-upgrade pipeline that retrieves true originals from Glacier cold storage.",
+  "main": "downloader.js",
+  "type": "commonjs",
+  "scripts": {
+    "login": "node manual_login.js",
+    "download": "node downloader.js",
+    "upgrade": "node upgrade.js",
+    "install-browser": "playwright install chromium"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "shutterfly",
+    "bulk-download",
+    "archive",
+    "personal-data",
+    "backup"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}

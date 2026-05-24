@@ -1,0 +1,38 @@
+# Secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+auth.json
+
+# Playwright persistent profile (legacy — no longer used, kept for cleanup of old clones)
+userdata/
+research/playwright/userdata/
+
+# Downloaded library — can be hundreds of GB
+downloads/
+test/
+
+# Logs and runtime state
+*.log
+downloader.pid
+*.tmp
+*.bak
+*.jsonl
+*.partial
+metadata.json
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
